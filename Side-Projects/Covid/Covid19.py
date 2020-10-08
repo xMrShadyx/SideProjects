@@ -10,7 +10,7 @@ town_with_most_sick = ''
 total_sick = 0
 
 for town in towns:
-	x = random.randint(1,50)
+	x = random.randint(20,70)
 	sleep(0.3)
 	total_sick += x
 	if x > amount_with_most_sick:
