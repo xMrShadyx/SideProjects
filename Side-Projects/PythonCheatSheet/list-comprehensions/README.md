@@ -1,5 +1,6 @@
 ```python
 Python List Comprehensions Cheat Sheet by Corey Schafer
+https://www.youtube.com/watch?v=3dt4OGnU5sM&t=355s
 ```
 
 
