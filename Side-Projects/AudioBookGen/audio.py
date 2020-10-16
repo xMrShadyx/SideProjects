@@ -12,3 +12,5 @@ for num in range(0, pages):
 	text = page.extractText()
 	speaker.say(text)
 	speaker.runAndWait()
+
+list
