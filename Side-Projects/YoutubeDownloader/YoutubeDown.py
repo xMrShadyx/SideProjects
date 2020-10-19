@@ -1,12 +1,28 @@
+"""
+For pytube to work properly, you need to go to : \\AppData\\Local\\Programs\\Python\\Python39\\Lib\\site-packages\\pytube\\extract.py
+at line : 301 or locate with ctrl + F
+except KeyError:
+            cipher_url = [
+                parse_qs(formats[i]["cipher"]) for i, data in enumerate(formats)
+
+and replace parse_qs with:
+
+cipher_url = [
+                parse_qs(formats[i]["signatureCipher"]) for i, data in enumerate(formats)
+            ]
+You can work with all youtube links only this way, before pytube auth fixes it...
+"""
+
 import os
 from pytube import YouTube #pip install pytube3
 from moviepy.editor import * #pip install moviepy **Requires numpy!!!!
 
 
 # Can have multiple items in list
-playlist = ['https://youtu.be/ZWuwJQPUmnw']
+playlist = ['https://www.youtube.com/watch?v=r4_FcVBaoZ0&list=RDo_l4Ab5FRwM&index=10']
 
 # Download all the videos from list above "playlist = []"
+
 for item in playlist:
     url = item
     my_video = YouTube(url)
@@ -15,6 +31,7 @@ for item in playlist:
     print("***Download video***")
     my_video = my_video.streams.get_highest_resolution()
     my_video.download()
+
 
 # Rename's some of the special characters which seems like give most of the errors.
 for file in os.listdir("E:\\Coding\\PyProject\\Side-Projects\\YoutubeDownloader"):
