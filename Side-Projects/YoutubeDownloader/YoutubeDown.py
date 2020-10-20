@@ -19,7 +19,7 @@ from moviepy.editor import * #pip install moviepy **Requires numpy!!!!
 
 
 # Can have multiple items in list
-playlist = ['https://www.youtube.com/watch?v=r4_FcVBaoZ0&list=RDo_l4Ab5FRwM&index=10']
+playlist = ['https://www.youtube.com/watch?v=o_l4Ab5FRwM&list=RDo_l4Ab5FRwM&start_radio=1']
 
 # Download all the videos from list above "playlist = []"
 
@@ -55,6 +55,9 @@ for item in list_n:
     audioclip.write_audiofile(mp3_file)
     audioclip.close()
     videoclip.close()
+
+    os.remove(item) # <- In case you don't want the video. just the mp3
+
 
 
 
