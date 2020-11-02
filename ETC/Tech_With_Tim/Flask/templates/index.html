@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Flask Base</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-    {% for x in content %}
-        <p>{{x}}</p>
+{% extends "base.html" %}
 
-    {% endfor %}
-</body>
-</html>
+<!-- Title block content -->
+{% block title %} Home Page {% endblock %}
+
+<!-- Main Content -->
+{% block content %}
+<h1> Test </h1>
+{% endblock %}
