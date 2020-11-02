@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 <!-- Title block content -->
-{% block title %} Login Page {% endblock %}
+{% block title %} User {% endblock %}
 
 <!-- Main Content -->
 {% block content %}
@@ -12,9 +12,5 @@
             {% endfor %}
         {% endif %}
     {% endwith %}
-<form action="#" method="post">
-    <p>Name:</p>
-    <p><input type="text" name="nm"></p>
-    <p><input type="submit" value="submit"></p>
-</form>
+<p>Welcome, {{user}}</p>
 {% endblock %}
