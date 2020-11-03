@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+<!-- Title -->
+{% block title %}Account Page{% endblock %}
+
+<!-- Main Content -->
+{% block content %}
+    <h1>{{ current_user.username }}</h1>
+{% endblock %}
