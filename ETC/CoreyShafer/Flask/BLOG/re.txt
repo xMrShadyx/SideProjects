@@ -4,6 +4,7 @@ pip install flask-wtf
 pip install flask-bcrypt
 pip install email-validator
 pip install flask-login
+pip install Pillow
 
 pip install tree
 tree /f /a
