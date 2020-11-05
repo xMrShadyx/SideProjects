@@ -2,9 +2,11 @@ pip install flask
 pip install flask-sqlalchemy
 pip install flask-wtf
 pip install flask-bcrypt
-pip install email-validator
+pip install flaks-mail
 pip install flask-login
+pip install email-validator
 pip install Pillow
+
 
 pip install tree
 tree /f /a
