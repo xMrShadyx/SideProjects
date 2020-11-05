@@ -13,3 +13,7 @@ tree /f /a
 
 
 type nul > main.py
+
+
+code . ~/.bash_profile
+For editing environ for config.py
