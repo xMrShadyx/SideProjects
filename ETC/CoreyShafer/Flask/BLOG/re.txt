@@ -17,3 +17,48 @@ type nul > main.py
 
 code . ~/.bash_profile
 For editing environ for config.py
+
+E:.
+|   re.txt
+|   requirments.txt
+|   run.py
+|
+\---flaskblog
+    |   config.py
+    |   models.py
+    |   site.db
+    |   __init__.py
+    |
+    +---main
+    |       routes.py
+    |       __init__.py
+    |
+    +---posts
+    |       forms.py
+    |       routes.py
+    |       __init__.py
+    |
+    +---static
+    |   |   main.css
+    |   |
+    |   \---profile_pics
+    |           default.jpg
+    |
+    +---templates
+    |       about.html
+    |       account.html
+    |       create_post.html
+    |       home.html
+    |       layout.html
+    |       login.html
+    |       post.html
+    |       register.html
+    |       reset_request.html
+    |       reset_token.html
+    |       user_posts.html
+    |
+    \---users
+            forms.py
+            routes.py
+            utils.py
+            __init__.py
