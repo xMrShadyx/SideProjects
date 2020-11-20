@@ -7,6 +7,7 @@ pip install flask-login
 pip install email-validator
 pip install Pillow
 
+pip install flask-whooshalchemy
 
 pip install tree
 tree /f /a
