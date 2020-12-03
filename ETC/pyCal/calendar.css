@@ -1,0 +1,38 @@
+.grid-container{
+     display: grid;
+     grid-template-columns: auto auto auto;
+     text-align: center;}
+.grid-item{
+     padding: 5px;
+ }
+.grid-item2{
+     padding: 3%;
+     text-align: center;
+     margin: 15px;
+ }
+body{
+    margin: auto;
+    text-align: center;
+    background-color: rgb(249, 240, 255);
+}
+table{
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+}
+
+.mon{
+  color:blue;
+}
+.sat{
+  color: rgb(130, 20, 220);
+}
+.sun{
+  color: rgb(233, 28, 124);
+}
+th1{
+  color: crimson;
+  margin: 100px;
+}
