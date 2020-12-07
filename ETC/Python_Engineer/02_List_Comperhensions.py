@@ -84,7 +84,7 @@ heros = ['Batman', 'Superman', 'Spiderman', 'Wolverine', 'Deadpool']
 #
 # my_gen = gen_func(nums)
 
-my_gen = (n * n for n in nums)
+# my_gen = (n * n for n in nums)
 
-for i in my_gen:
-	print(i)
+# for i in my_gen:
+# 	print(i)

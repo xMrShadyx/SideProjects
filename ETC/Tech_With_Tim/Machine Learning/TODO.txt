@@ -1,0 +1,7 @@
+Linear Regression 
+KNN (K-Nearest-Neighbours)
+SVM (Support Vector Machines)
+
+Reinforcement Learning
+Neural Networks
+Computer Vision

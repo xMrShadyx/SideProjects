@@ -14,21 +14,22 @@
 #          {'name': 'Dirk', 'age': 38}
 #          ]
 #
-# user_name = [user['name'] for user in users if user['age'] > 30 and user['name'] == 'Dirk']
+# user_name = [user['name'] for user in users if user['age'] > 30 and
+# user['name'] == 'Dirk']
 # print(user_name)
 
 
-user_groups = [
-	[
-		{'name': 'Manuel', 'age': 31},
-		{'name': 'Max', 'age': 30}
-	],
-	[
-		{'name': 'Sarah', 'age': 29},
-		{'name': 'July', 'age': 32}
+# user_groups = [
+# 	[
+# 		{'name': 'Manuel', 'age': 31},
+# 		{'name': 'Max', 'age': 30}
+# 	],
+# 	[
+# 		{'name': 'Sarah', 'age': 29},
+# 		{'name': 'July', 'age': 32}
+# 	]
+# ]
 
-	]
-]
-
-user_name = [person['name'] for group in user_groups for person in group if person['age'] > 30]
-print(user_name)
+# user_name = [person['name'] for group in/
+# user_groups for person in group if person['age'] > 30]
+# print(user_name)
