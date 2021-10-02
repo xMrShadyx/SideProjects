@@ -81,7 +81,7 @@ public class LoginPage extends JFrame implements ActionListener {
         } else if (e.getSource() == loginButton) {
             String userName = userNameField.getText();
             String passWord = passwordField.getText();
-            if (accountInfo.doesExist(userName)) { 
+            if (accountInfo.doesExist(userName)) {
                 if (accountInfo.returnPassword(userName).equals(passWord)) {
                     JOptionPane.showMessageDialog(null, "Welcome");
                 } else {
