@@ -1,11 +1,15 @@
 package runApp;
 
-import net.Login.Login;
+import net.Login.LoginPage;
+import net.Register.RegisterPage;
 
 public class Main {
     public static void main(String[] args) {
-        Login loadApp = new Login();
+        LoginPage loadApp = new LoginPage();
         loadApp.setVisible(true);
+
+//        RegisterPage regApp = new RegisterPage();
+//        regApp.setVisible(true);
 
     }
 }
