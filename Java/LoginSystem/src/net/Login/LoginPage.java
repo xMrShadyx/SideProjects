@@ -4,11 +4,14 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import net.Register.RegisterPage;
+import net.HashDataBase.AccountStorage.Accounts;
 
 public class LoginPage extends JFrame implements ActionListener {
     public RegisterPage newAccount;
+    public Accounts accountInfo;
 
     public JButton loginButton;
     public JButton registerButton;
@@ -18,6 +21,7 @@ public class LoginPage extends JFrame implements ActionListener {
 
     public JLabel userNameLabel;
     public JLabel passwordLabel;
+
 
     public LoginPage() {
         super("Login System");
@@ -29,6 +33,8 @@ public class LoginPage extends JFrame implements ActionListener {
         setLayout(null);
 
         newAccount = new RegisterPage();
+        accountInfo = new Accounts();
+        accountInfo.getFreeAcc();
 
         userNameLabel = new JLabel("Username: ", SwingConstants.CENTER);
         userNameLabel.setFont(new Font("Serif", Font.PLAIN, 14));
@@ -41,18 +47,19 @@ public class LoginPage extends JFrame implements ActionListener {
         add(passwordLabel);
 
         userNameField = new JTextField("");
-        userNameField.setFont(new Font("Serif", Font.PLAIN, 10));
+        userNameField.setFont(new Font("Serif", Font.PLAIN, 15));
         userNameField.setForeground(Color.GRAY);
         userNameField.setBounds(120, 10, 120, 20);
         add(userNameField);
 
         passwordField = new JTextField("");
-        passwordField.setFont(new Font("Serif", Font.PLAIN, 10));
+        passwordField.setFont(new Font("Serif", Font.PLAIN, 15));
         passwordField.setForeground(Color.GRAY);
         passwordField.setBounds(120, 40, 120, 20);
         add(passwordField);
 
         loginButton = new JButton("Login");
+        loginButton.addActionListener(this);
         loginButton.setFont(new Font("Serif", Font.PLAIN, 10));
         loginButton.setBounds(50, 70, 80, 20);
         add(loginButton);
@@ -71,7 +78,18 @@ public class LoginPage extends JFrame implements ActionListener {
             newAccount.setVisible(true);
             setVisible(false);
             dispose();
-
+        } else if (e.getSource() == loginButton) {
+            String userName = userNameField.getText();
+            String passWord = passwordField.getText();
+            if (accountInfo.doesExist(userName)) { 
+                if (accountInfo.returnPassword(userName).equals(passWord)) {
+                    JOptionPane.showMessageDialog(null, "Welcome");
+                } else {
+                    JOptionPane.showMessageDialog(null,"Wrong Username/Password");
+                }
+            } else {
+                JOptionPane.showMessageDialog(null,"Account doesn't exist.");
+            }
         }
     }
 }

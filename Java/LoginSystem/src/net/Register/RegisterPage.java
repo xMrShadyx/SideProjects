@@ -6,10 +6,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import net.Login.LoginPage;
+import net.HashDataBase.AccountStorage.Accounts;
 
 
 public class RegisterPage extends JFrame implements ActionListener {
     public LoginPage backToLogin;
+    public Accounts accountToRegister;
 
 
     public JTextField accountNameField;
@@ -34,6 +36,8 @@ public class RegisterPage extends JFrame implements ActionListener {
         setLocationRelativeTo(null);
         setLayout(null);
         setVisible(false);
+
+        accountToRegister = new Accounts();
 
         frontInfoLabel = new JLabel("Register new Account:",SwingConstants.CENTER);
         frontInfoLabel.setFont(new Font("Serif", Font.PLAIN, 25));
@@ -82,6 +86,7 @@ public class RegisterPage extends JFrame implements ActionListener {
         add(emailField);
 
         confirmButton = new JButton("Confirm");
+        confirmButton.addActionListener(this);
         confirmButton.setFont(new Font("Serif", Font.PLAIN, 14));
         confirmButton.setBounds(82, 170, 120, 20);
         add(confirmButton);
@@ -103,7 +108,11 @@ public class RegisterPage extends JFrame implements ActionListener {
             dispose();
 
         } else if (e.getSource() == confirmButton) {
-
+            if (passwordOneField.getText().equals(passwordTwoField.getText()) && emailField.getText().length() > 0) {
+                accountToRegister.setAccount(accountNameField.getText(), passwordOneField.getText());
+            } else {
+                JOptionPane.showMessageDialog(null, "Empty fields, or password mismatch.");
+            }
         }
     }
 }
