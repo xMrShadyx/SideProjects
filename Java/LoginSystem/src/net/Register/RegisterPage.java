@@ -7,8 +7,10 @@ import java.awt.event.ActionListener;
 
 import net.Login.LoginPage;
 
+
 public class RegisterPage extends JFrame implements ActionListener {
     public LoginPage backToLogin;
+
 
     public JTextField accountNameField;
     public JTextField passwordOneField;
@@ -99,6 +101,8 @@ public class RegisterPage extends JFrame implements ActionListener {
             backToLogin.setVisible(true);
             setVisible(false);
             dispose();
+
+        } else if (e.getSource() == confirmButton) {
 
         }
     }
