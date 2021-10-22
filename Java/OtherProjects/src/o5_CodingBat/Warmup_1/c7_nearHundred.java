@@ -1,6 +1,6 @@
 package o5_CodingBat.Warmup_1;
 
-public class nearHundred {
+public class c7_nearHundred {
     public static void main(String[] args) {
         //Given an int n, return true if it is within 10 of 100 or 200.
         // Note: Math.abs(num) computes the absolute value of a number.

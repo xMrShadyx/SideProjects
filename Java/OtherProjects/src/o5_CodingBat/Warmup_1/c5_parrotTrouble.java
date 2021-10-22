@@ -1,6 +1,6 @@
 package o5_CodingBat.Warmup_1;
 
-public class parrotTrouble {
+public class c5_parrotTrouble {
     public static void main(String[] args) {
 
 

@@ -1,6 +1,6 @@
 package o5_CodingBat.Warmup_1;
 
-public class posNeg {
+public class c8_posNeg {
     public static void main(String[] args) {
         // Given 2 int values, return true if one is negative and one is positive.
         // Except if the parameter "negative" is true, then return true only if both are negative.

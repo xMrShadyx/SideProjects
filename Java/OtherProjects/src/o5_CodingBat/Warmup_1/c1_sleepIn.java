@@ -1,6 +1,6 @@
 package o5_CodingBat.Warmup_1;
 
-public class sleepIn {
+public class c1_sleepIn {
     public static void main(String[] args) {
 
         // The parameter weekday is true if it is a weekday, and the parameter vacation

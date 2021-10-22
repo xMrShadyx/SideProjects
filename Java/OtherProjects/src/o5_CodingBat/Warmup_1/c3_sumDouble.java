@@ -1,6 +1,6 @@
 package o5_CodingBat.Warmup_1;
 
-public class sumDouble {
+public class c3_sumDouble {
     public static void main(String[] args) {
 
         // Given two int values, return their sum.

@@ -1,6 +1,6 @@
 package o5_CodingBat.Warmup_1;
 
-public class monkeyTrouble {
+public class c2_monkeyTrouble {
     public static void main(String[] args) {
 
         //We have two monkeys, a and b, and the parameters aSmile and bSmile indicate if each is smiling.

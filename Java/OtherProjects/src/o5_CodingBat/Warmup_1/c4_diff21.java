@@ -1,6 +1,6 @@
 package o5_CodingBat.Warmup_1;
 
-public class diff21 {
+public class c4_diff21 {
     public static void main(String[] args) {
 
 //        Given an int n, return the absolute difference between n and 21,

@@ -1,6 +1,6 @@
 package o5_CodingBat.Warmup_1;
 
-public class notString {
+public class c9_notString {
     public static void main(String[] args) {
 
         //Given a string, return a new string where "not " has been added to the front. However,
