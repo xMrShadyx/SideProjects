@@ -14,12 +14,18 @@ public class c7_last2 {
         System.out.println(last2("axxxaaxx")); // → 2
     }
     public static int last2(String str) {
-        String temp = str.substring(0,2);
-        System.out.println(temp);
-//        String[] result = str.split(temp);
-//        System.out.println(Arrays.toString(result));
+        if (str.length() < 2) return 0;
 
+        String end = str.substring(str.length()-2);
+        int count = 0;
 
-        return 0;
+        for (int i=0; i<str.length()-2; i++) {
+            String sub = str.substring(i, i+2);
+            if (sub.equals(end)) {
+                count++;
+            }
+        }
+
+        return count;
     }
 }
